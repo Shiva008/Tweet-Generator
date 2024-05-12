@@ -23,3 +23,4 @@ dotenv
 
 Contributors
 Shivam Nimbalkar
+<img width="959" alt="Screenshot 2024-05-12 171415" src="https://github.com/Shiva008/Tweet-Generator/assets/91310677/149a518f-ed11-421b-adb3-ad4906515c42">
