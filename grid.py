@@ -12,7 +12,7 @@ aai.settings.api_key = os.getenv("ASSEMBLYAI_API_KEY")
 
 def get_space_info(space_id):
     """Fetches information about a Twitter Space using the given ID."""
-    bearer_token = "RDNJLWV1TF83cS1RdkVSalE3MDVXbG5seHFVbWxBRmRQYVFNZi03YTlScEhHOjE3MTU1MTIyNDc1MTM6MToxOmF0OjE"  # Replace with your actual bearer token
+    bearer_token = "ADD"  # Replace with your actual bearer token
     headers = {"Authorization": f"Bearer {bearer_token}"}
     url = f"https://api.twitter.com/2/spaces/{space_id}?space.fields=speaker_ids&expansions=speaker_ids&user.fields=id&topic.fields=name"
     response = requests.get(url, headers=headers)
@@ -37,11 +37,11 @@ with st.sidebar:
     import streamlit as st
 
     # Set up Tweepy credentials
-    api_key = "jJeS41eHo34bZTteXKVdKqmQh"
-    api_secret = "FbDkSj6oqmTxAiKlWCwyKAUExxZC7zgJNvavBuv176KoYzwogf"
-    bearer_token = "AAAAAAAAAAAAAAAAAAAAAPzYtgEAAAAA2oBpWBkwLqVscTYQAvMtfUr1U4Y%3D0osLE0jyPGiMGoXYkK2SHUraXia8KE7sPG7vfNo5z9d4vuvlhb"
-    access_token = "1788286387956899840-UODtBVnzsotXMRLkoQEyb1NB0KDX3s"
-    access_token_secret = "9kQuz1JxZdaAQM5zJrSgjtrBez74UxZmXTbHFxqONY9dH"
+    api_key = "ADD"
+    api_secret = "ADD"
+    bearer_token = "ADD"
+    access_token = "ADD"
+    access_token_secret = "ADD"
 
     # Initialize Tweepy Client
     client = tweepy.Client(bearer_token, api_key, api_secret, access_token, access_token_secret)
@@ -96,6 +96,4 @@ if uploaded_file is not None and space_id:
 else:
     st.write("Please upload an MP3 file and enter the Twitter Space ID.")
 
-# # Third column (empty)
-# with col3:
-#     st.write("hjir")
+
